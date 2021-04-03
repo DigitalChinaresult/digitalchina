@@ -3,7 +3,9 @@
 You can use the [editor on GitHub](https://github.com/fanghaoze/digitalchina/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-<a href="/map_lock2161.html">2161</a>
+
+<a href="/map_lock2161.html">lock2161</a>
+[lock2162](/map_lock2162.html)
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
