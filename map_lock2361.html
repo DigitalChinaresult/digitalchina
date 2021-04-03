@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2a4351de71e54c79a3547582fc32e298 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@master/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2a4351de71e54c79a3547582fc32e298" ></div>
+        
+</body>
+<script>    
+    
+            var map_2a4351de71e54c79a3547582fc32e298 = L.map(
+                "map_2a4351de71e54c79a3547582fc32e298",
+                {
+                    center: [24.500526, 118.127606],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1c65a2762f294dfeb1849282444068d3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2a4351de71e54c79a3547582fc32e298);
+        
+    
+            var heat_map_58a66430261d4af28a5170c7b24ffc84 = L.heatLayer(
+                [[24.505081, 118.12043700000001], [24.503222, 118.12838899999998], [24.506375, 118.133021], [24.487145, 118.114434], [24.501629, 118.12231399999999], [24.500441, 118.121987], [24.49515, 118.10658799999999], [24.489669, 118.120865], [24.501909, 118.13717700000001], [24.506815, 118.127847], [24.499574, 118.13853700000001], [24.505761, 118.133127], [24.502019, 118.121628], [24.505729000000002, 118.13336699999999], [24.505968, 118.13329099999999], [24.504618, 118.120493], [24.501348999999998, 118.13644199999999], [24.504869, 118.12052800000001], [24.494253, 118.117414], [24.50354, 118.12077], [24.504781, 118.12346799999999], [24.5109, 118.11621799999999], [24.509798, 118.12758000000001], [24.496801, 118.126924], [24.492842, 118.129451], [24.503968, 118.12133200000001], [24.494147, 118.10758700000001], [24.49145, 118.106004], [24.512897, 118.134475], [24.494027, 118.123147], [24.510374, 118.13059399999999], [24.503254000000002, 118.120848], [24.499772, 118.11927], [24.488792999999998, 118.11833200000001], [24.510210999999998, 118.11027299999999], [24.504129000000002, 118.128428], [24.494173999999997, 118.107897], [24.505587, 118.133372], [24.506323000000002, 118.133122], [24.515465, 118.12211599999999], [24.493802, 118.123208], [24.496925, 118.122619], [24.509109, 118.119444], [24.494970000000002, 118.122828], [24.510735, 118.116381], [24.488421, 118.119853], [24.50244, 118.12314099999999], [24.493011, 118.135232], [24.505838, 118.133307], [24.514969, 118.122693], [24.493281, 118.10784699999999], [24.504838, 118.13549599999999], [24.503232999999998, 118.12838700000002], [24.49804, 118.129747], [24.510353, 118.11601200000001], [24.502710999999998, 118.125395], [24.485474, 118.116919], [24.493935, 118.10789799999999], [24.491198, 118.130299], [24.509874, 118.127627], [24.499304000000002, 118.123421], [24.511079000000002, 118.13440600000001], [24.507911, 118.126874], [24.50546, 118.12323799999999], [24.512347000000002, 118.114548], [24.501954, 118.13658400000001], [24.495223, 118.12288000000001], [24.497557999999998, 118.13609699999999], [24.511321, 118.136825], [24.506014999999998, 118.13333100000001], [24.506026000000002, 118.13326799999999], [24.489707, 118.120871], [24.496682, 118.127045], [24.510742, 118.116142], [24.506646, 118.120347], [24.504368, 118.12852600000001], [24.506808, 118.136416], [24.493779999999997, 118.11691200000001], [24.504976, 118.123342], [24.505978, 118.133242], [24.504575, 118.12123100000001], [24.499992000000002, 118.13511100000001], [24.501877, 118.123003], [24.504693, 118.120549], [24.501206, 118.120379], [24.506722, 118.13700800000001], [24.496546, 118.127848], [24.501883, 118.12303899999999], [24.503206, 118.12844799999999], [24.506, 118.13337], [24.495347, 118.12236499999999], [24.494951, 118.12779599999999], [24.488673000000002, 118.118523], [24.504732, 118.12052800000001], [24.495969, 118.122849], [24.505023, 118.123147], [24.488581, 118.109444], [24.504542, 118.12120900000001], [24.503469, 118.139176], [24.511138, 118.13456200000002], [24.505851999999997, 118.13335900000001], [24.504626000000002, 118.1213], [24.500346, 118.13507299999999]],
+                {"blur": 15, "gradient": {"0.1": "blue", "0.3": "green", "0.5": "yellow", "0.55": "orange", "0.75": "red"}, "maxZoom": 18, "minOpacity": 0.5, "radius": 8}
+            ).addTo(map_2a4351de71e54c79a3547582fc32e298);
+        
+    
+            var marker_a003c7eb5dda4bab8dcdbbf9500ebf9c = L.marker(
+                [24.50158045, 118.12157318],
+                {}
+            ).addTo(map_2a4351de71e54c79a3547582fc32e298);
+        
+    
+            var marker_77d8f4f46d2d40a18bf358bb118c6667 = L.marker(
+                [24.50889058256088, 118.11797445483425],
+                {}
+            ).addTo(map_2a4351de71e54c79a3547582fc32e298);
+        
+    
+            var marker_ef54f07ce1c34f29a6b73e3837952b77 = L.marker(
+                [24.4922458280743, 118.12352341558469],
+                {}
+            ).addTo(map_2a4351de71e54c79a3547582fc32e298);
+        
+    
+            var marker_75422991d75f4a5798eac9268dbce6fc = L.marker(
+                [24.514873824452255, 118.11371427488658],
+                {}
+            ).addTo(map_2a4351de71e54c79a3547582fc32e298);
+        
+    
+            var marker_df8a0db50f694d5ea67eb75ee94a22c0 = L.marker(
+                [24.486133217320365, 118.11803293629183],
+                {}
+            ).addTo(map_2a4351de71e54c79a3547582fc32e298);
+        
+    
+            var marker_789366362c4043f9a1e3b2d81a3c0832 = L.marker(
+                [24.495096988796657, 118.13292220248907],
+                {}
+            ).addTo(map_2a4351de71e54c79a3547582fc32e298);
+        
+    
+            var marker_ee5bbdc1a74244b3a34bf31af93a1907 = L.marker(
+                [24.48820701695682, 118.10791909583078],
+                {}
+            ).addTo(map_2a4351de71e54c79a3547582fc32e298);
+        
+</script>
