@@ -5,6 +5,8 @@ You can use the [editor on GitHub](https://github.com/fanghaoze/digitalchina/edi
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 ## LOGO
 ![logo](/logo.png)
+## BG
+![bg](/backgroud.png)
 ### DAY21
 [lock2161](/map_lock2161.html)
 [lock2162](/map_lock2162.html)
