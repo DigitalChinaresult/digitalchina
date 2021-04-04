@@ -7,7 +7,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ![logo](/logo.png)
 ## BG
 
-![bgmap](/bg_map.png)
+![bgmap](/bgfig_map.png)
 ![bg](/backgroud.png)
 ![bgcolor](/bgcolor.png)
 ### DAY21
